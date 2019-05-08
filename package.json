@@ -4,12 +4,14 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "nyc mocha"
+    "test": "mocha",
+    "report-coverage": "nyc npm run test"
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
     "chai": "^4.2.0",
+    "codecov": "^3.3.0",
     "mocha": "^6.1.4",
     "nyc": "^14.1.0"
   }
