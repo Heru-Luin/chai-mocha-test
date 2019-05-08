@@ -6,7 +6,8 @@
   "scripts": {
     "test": "mocha",
     "minify": "uglifyjs src/app.js > src/app.min.js",
-    "report-coverage": "nyc npm run test"
+    "report-coverage": "nyc mocha",
+    "html-coverage": "nyc --reporter=html --reporter=text mocha"
   },
   "license": "MIT",
   "devDependencies": {
