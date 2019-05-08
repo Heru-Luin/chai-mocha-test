@@ -1,7 +1,12 @@
-var expect = require('chai').expect;
+
+const assert = require('chai').assert;
+const Test = require('../src/app').Test;
+
+console.log(Test);
 
 describe('A basic test', function () {
-	it('should pass when everything is ok', function() {
-		expect(true).to.be.true;
+	it('should return foo', function() {
+		let test = new Test();
+		assert.equal(test.foo(), 'foo');
 	});
 });

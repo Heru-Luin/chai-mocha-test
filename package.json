@@ -2,17 +2,19 @@
   "name": "npmtest",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "src/app.js",
   "scripts": {
     "test": "mocha",
+    "minify": "uglifyjs src/app.js > src/app.min.js",
     "report-coverage": "nyc npm run test"
   },
-  "author": "",
-  "license": "ISC",
+  "license": "MIT",
   "devDependencies": {
     "chai": "^4.2.0",
     "codecov": "^3.3.0",
     "mocha": "^6.1.4",
-    "nyc": "^14.1.0"
-  }
+    "nyc": "^14.1.0",
+    "uglify-es": "^3.3.9"
+  },
+  "dependencies": {}
 }
